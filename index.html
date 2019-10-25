@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        html {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title></title>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.3.1023/styles/kendo.default-v2.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="main.css"/>
+    <script src="https://kendo.cdn.telerik.com/2019.3.1023/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2019.3.1023/js/kendo.all.min.js"></script>
+
+
+</head>
+
+<body>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbDUCiubRG0grt-UZu-Qto0vD9Z2OE6cQ&sensor=true"></script>
+    <div id="example">
+        <div id="window">
+            <div data-role="view" data-init="buildMap" id="map" data-title="Map">
+                <div id="map_canvas" style="width:100%;"></div>
+            </div>
+        </div>
+
+        <span id="undo" style="display:none" class="k-button hide-on-narrow">Click here to open the window.</span>
+
+        <div class="responsive-message"></div>
+
+        <script src="index.js"></script>
+    </div>
+</body>
+
+</html>
