@@ -45,10 +45,12 @@ function buildMap() {
         position: position,
         map: map,
         icon: icon,
-        dragable: true
+        draggable: true,
+        animation: google.maps.Animation.DROP
     });
 
     google.maps.event.addListener(map, 'click', function (event) {
         marker.setPosition(event.latLng);
     });
 }
+
